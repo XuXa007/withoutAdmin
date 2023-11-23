@@ -30,8 +30,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/MaintenanceReport/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFpbnRlbmFuY2VSZXBvcnQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/MaintenanceReport/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFpbnRlbmFuY2VSZXBvcnQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/MaintenanceReport/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFpbnRlbmFuY2VSZXBvcnQvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/MaintenanceReport/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFpbnRlbmFuY2VSZXBvcnQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/MaintenanceReport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFpbnRlbmFuY2VSZXBvcnQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/xl/RiderProjects/WebApplication7/WebApplication7/Pages/Privacy.cshtml]

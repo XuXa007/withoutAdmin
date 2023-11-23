@@ -21,7 +21,8 @@ namespace WebApplication7.Pages.MaintenanceReport
 
         public IActionResult OnGet()
         {
-        ViewData["VehicleId"] = new SelectList(_context.Vehicle, "Id", "Make");
+            ViewData["MakeList"] = new SelectList(_context.Vehicle.Select(v => v.Make).Distinct().ToList());
+            ViewData["ModelList"] = new SelectList(_context.Vehicle.Select(v => v.Model).Distinct().ToList());
             return Page();
         }
 
