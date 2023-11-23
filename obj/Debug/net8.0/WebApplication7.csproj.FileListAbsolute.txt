@@ -276,3 +276,4 @@
 /Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/WebApplication7.pdb
 /Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/WebApplication7.genruntimeconfig.cache
 /Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/ref/WebApplication7.dll
+/Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/WebApplication7.sourcelink.json

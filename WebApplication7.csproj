@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Pages\MaintenanceReport\" />
       <Folder Include="Pages\Vehicle\" />
     </ItemGroup>
 

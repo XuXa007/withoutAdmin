@@ -15,5 +15,6 @@ namespace WebApplication7.Data
         }
 
         public DbSet<WebApplication7.Models.Vehicle> Vehicle { get; set; } = default!;
+        public DbSet<WebApplication7.Models.MaintenanceReport> MaintenanceReport { get; set; } = default!;
     }
 }

@@ -1,0 +1,46 @@
+@page
+@model WebApplication7.Pages.MaintenanceReport.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>MaintenanceReport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaintenanceReport.RequestId" />
+            <div class="form-group">
+                <label asp-for="MaintenanceReport.VehicleId" class="control-label"></label>
+                <select asp-for="MaintenanceReport.VehicleId" class="form-control" asp-items="ViewBag.VehicleId"></select>
+                <span asp-validation-for="MaintenanceReport.VehicleId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaintenanceReport.MaintenanceType" class="control-label"></label>
+                <input asp-for="MaintenanceReport.MaintenanceType" class="form-control" />
+                <span asp-validation-for="MaintenanceReport.MaintenanceType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaintenanceReport.RequestDate" class="control-label"></label>
+                <input asp-for="MaintenanceReport.RequestDate" class="form-control" />
+                <span asp-validation-for="MaintenanceReport.RequestDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
