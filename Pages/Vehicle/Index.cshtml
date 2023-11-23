@@ -1,0 +1,79 @@
+@page
+@model WebApplication7.Pages.Vehicle.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].Make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].RegistrationNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].OwnerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].OwnerContact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].LastServiceDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle[0].OdometerReading)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Vehicle) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegistrationNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerContact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastServiceDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OdometerReading)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
