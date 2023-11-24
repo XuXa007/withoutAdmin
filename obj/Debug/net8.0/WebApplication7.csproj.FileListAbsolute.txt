@@ -277,3 +277,5 @@
 /Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/WebApplication7.genruntimeconfig.cache
 /Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/ref/WebApplication7.dll
 /Users/xl/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net8.0/WebApplication7.sourcelink.json
+/Users/xl/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net8.0/Npgsql.dll
+/Users/xl/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

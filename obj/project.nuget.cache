@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YBf2H+xp10nPFFZ6VdVSlIOE6vtBPyRiV6k37OXSSoA+bQROqnz1optmhZlk62Fw4epvWj+TGhY39pQp72wIcA==",
+  "dgSpecHash": "ht8h2BCjoRkEVLkboA2rZju+M3CB0tkbN6J/7oXZkG/77v1XZyw/OBNEq1KekhzDSXKKgML5XPHssc18bq/Nng==",
   "success": true,
   "projectFilePath": "/Users/xl/RiderProjects/WebApplication7/WebApplication7/WebApplication7.csproj",
   "expectedPackageFiles": [
@@ -118,6 +118,8 @@
     "/Users/xl/.nuget/packages/microsoft.win32.systemevents/7.0.0/microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "/Users/xl/.nuget/packages/mono.texttemplating/2.3.1/mono.texttemplating.2.3.1.nupkg.sha512",
     "/Users/xl/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/xl/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
+    "/Users/xl/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
     "/Users/xl/.nuget/packages/nuget.common/6.3.1/nuget.common.6.3.1.nupkg.sha512",
     "/Users/xl/.nuget/packages/nuget.configuration/6.3.1/nuget.configuration.6.3.1.nupkg.sha512",
     "/Users/xl/.nuget/packages/nuget.dependencyresolver.core/6.3.1/nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

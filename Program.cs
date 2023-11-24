@@ -1,12 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication7.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<WebApplication7Context>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("WebApplication7Context") ?? throw new InvalidOperationException("Connection string 'WebApplication7Context' not found.")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("WebApplication7Context") ?? throw new InvalidOperationException("Connection string 'WebApplication7Context' not found.")));
 
 var app = builder.Build();
 

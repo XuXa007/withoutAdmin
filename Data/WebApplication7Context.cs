@@ -14,7 +14,18 @@ namespace WebApplication7.Data
         {
         }
 
-        public DbSet<WebApplication7.Models.Vehicle> Vehicle { get; set; } = default!;
-        public DbSet<WebApplication7.Models.MaintenanceReport> MaintenanceReport { get; set; } = default!;
+        public DbSet<Vehicle> Vehicle { get; set; } = default!;
+        public DbSet<MaintenanceReport> MaintenanceReport { get; set; } = default!;
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Vehicle>()
+                .Property(v => v.Id)
+                .ValueGeneratedOnAdd();
+
+            // modelBuilder.Entity<MaintenanceReport>()
+            //     .Property(v => v.RequestId)
+            //     .ValueGeneratedOnAdd();
+        }
     }
 }

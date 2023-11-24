@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApplication7.Models;
 
@@ -28,10 +29,7 @@ public class Vehicle
     [Required(ErrorMessage = "Owner contact name is required")]
     public string OwnerContact { get; set; }
     
-    [Display(Name = "Last service date")]
-    [DataType(DataType.Date)]
-    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-    public DateTime LastServiceDate { get; set; }
+    public string LastServiceDate { get; set; }
     
     [Display(Name = "Odometer reading")]
     [Range(0, int.MaxValue, ErrorMessage = "Odometer reading must be non-negative")]

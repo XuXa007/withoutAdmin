@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using WebApplication7.Data;
 using WebApplication7.Models;
 
@@ -27,15 +28,22 @@ namespace WebApplication7.Pages.Vehicle
         [BindProperty]
         public Models.Vehicle Vehicle { get; set; } = default!;
 
-        // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
+            if (Vehicle.Id == 0)
+            {
+                _context.Vehicle.Add(Vehicle);
+            }
+            else
+            {
+                _context.Entry(Vehicle).State = EntityState.Modified;
+            }
 
-            _context.Vehicle.Add(Vehicle);
+
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

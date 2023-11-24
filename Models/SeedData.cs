@@ -16,27 +16,24 @@ public class SeedData
                 throw new ArgumentNullException("Null RazorPagesMovieContext");
             }
             
-            if (context.Vehicle.Any())
-            {
-                return;   // DB has been seeded
-            }
+            // if (context.Vehicle.Any())
+            // {
+            //     return;   // DB has been seeded
+            // }
 
             context.Vehicle.AddRange(
                 new Vehicle
                 {
-                    Id = 1,
                     Make = "some1",
                     Model = "Romantic Comedy",
-                    RegistrationNumber = "777"
-                },
-
-                new Vehicle
-                {
-                    Id = 2,
-                    Make = "some2",
-                    Model = "Mazda",
-                    RegistrationNumber = "111"
+                    RegistrationNumber = "777",
+                    LastServiceDate = "DateTime.Today",
+                    OwnerName = "He",
+                    OwnerContact = "Hes",
+                    Year = 2020,
+                    OdometerReading = 100
                 });
+            
             context.SaveChanges();
         }
     }
